@@ -51,7 +51,7 @@ combined_data = pd.concat([cData_cleaned, fData_cleaned])
 mymap = folium.Map(location=[combined_data['Latitude'].iloc[0], combined_data['Longitude'].iloc[0]], zoom_start=10)
     
 def add_markers_from_mongodb():
-    client = pymongo.MongoClient("mongodb+srv://hrit:9980030603@cluster0.pxklwg8.mongodb.net")
+    client = pymongo.MongoClient("#")
     db = client["unoff"]
     collection = db["volunteers"]
 
